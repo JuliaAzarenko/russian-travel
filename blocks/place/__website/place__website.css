@@ -1,6 +1,11 @@
 .place__website {
-  max-height: 46px;
-  max-width: 456px;
   margin: 0;
   align-self: end;
+  justify-self: start;
+}
+
+@media screen and (max-width: 720px) {
+  .place__website {
+    align-self: start;
+  }
 }

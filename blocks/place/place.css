@@ -4,5 +4,31 @@
   row-gap: 48px;
   max-width: 100%;
   min-height: min-content;
-  grid-template-columns: minmax(min-content, 460px) minmax(min-content, 484px);
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+}
+
+@media screen and (max-width: 1024px) {
+  .place {
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    column-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 50px;
+  }
+
+  .place:last-of-type {
+    margin-bottom: 0;
+  }
 }
