@@ -1,12 +1,12 @@
 .cover {
   max-width: 1184px;
-  height: 740px;
+  min-height: 740px;
   margin: 0 auto;
   padding: 0;
   background-image: url(../../images/__background.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   position: relative;
 }
 
@@ -23,8 +23,6 @@
 }
 
 .cover:hover::before {
-  content: "";
-  background-color: #2A2C2F;
   opacity: 0.8;
   transition: opacity .5s ease-in;
 }
@@ -32,20 +30,20 @@
 @media screen and (max-width: 1024px) {
   .cover {
     max-width: 1024px;
-    height: 640px;
+    min-height: 640px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .cover {
     max-width: 768px;
-    height: 480px;
+    min-height: 480px;
   }
 }
 
 @media screen and (max-width: 720px) {
   .cover {
     max-width: 320px;
-    height: 200px;
+    min-height: 200px;
   }
 }
